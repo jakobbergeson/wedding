@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.link {
+  color:var(--link);
+  transition: color .5s ease;
+}
+
+.link:hover {
+  color: var(--secondary);
+  transition: color .3s ease;
+}
+
+.lineHidden {
+  height: 2px;
+  width: 0%;
+  background-color: var(--accent);
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.lineShow {
+  height:2px;
+  width: 100%;
+  background-color: var(--accent);
+  opacity: 1;
+  transition: all .3s ease;
+}

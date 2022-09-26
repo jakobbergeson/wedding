@@ -1,0 +1,10 @@
+.sentence {
+  color: var(--accent);
+  font-size: var(--step-1);
+}
+
+.heading {
+  color: var(--secondary);
+  font-size: var(--step-7);
+  margin: 0;
+}
