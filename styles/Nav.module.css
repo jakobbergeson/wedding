@@ -1,0 +1,21 @@
+.container {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 1000;
+  top: 0px;
+  padding: 1rem 0rem;
+  font-size: var(--step-0);
+  backdrop-filter: blur(10px);
+  background-color: rgba(247, 250, 252, .84);
+  border: 1px solid var(--primary);
+  transition: border .2s ease
+}
+
+.scroll {
+  border-bottom: 1px solid var(--link);
+  transition: border .2s ease
+}

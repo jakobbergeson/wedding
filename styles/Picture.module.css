@@ -1,0 +1,11 @@
+.container {
+  max-width: 85%;
+  width: 85%;
+  max-height: 600px;
+  height:600px;
+  position: relative;
+}
+
+.picture {
+  object-fit: cover;
+}
