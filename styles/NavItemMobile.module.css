@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 3rem;
+  width: fit-content;
+}
+
+.link {
+  color:var(--primary);
+  transition: color .5s ease;
+}
+
+.link:hover {
+  color: var(--link);
+  transition: color .3s ease;
+}
+
+.line {
+  content:"";
+  background: var(--accent);
+  background: linear-gradient(90deg,var(--accent),var(--accent) 50%,var(--link) 0,var(--link));
+  width: 50px;
+  height: 2px;
+  background-size: 200% 100%;
+  border-radius: 2px;
+  transition-delay: .5s;
+  transition-property: background-position;
+  transition-duration: .3s;
+  margin: 0.5em auto;
+  display: block;
+}
+
+.odd{
+  transform: scale(-1);
+}
+
+.open {
+  background-position: -100% 0;
+}
