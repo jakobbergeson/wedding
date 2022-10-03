@@ -1,4 +1,4 @@
-/* @link https://utopia.fyi/type/calculator?c=320,14,1.2,1440,20,1.25,5,2,2560&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+/* @link https://utopia.fyi/type/calculator?c=320,14,1.067,1440,20,1.25,10,3,2560&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 
 
@@ -10,16 +10,23 @@
   --link: #7e6e66;
 
   /* font-size */
-  --step--2: clamp(0.61rem, calc(0.55rem + 0.28vw), 0.80rem);
-  --step--1: clamp(0.73rem, calc(0.65rem + 0.39vw), 1.00rem);
+  --step--3: clamp(0.64rem, calc(0.74rem + -0.11vw), 0.72rem);
+  --step--2: clamp(0.77rem, calc(0.76rem + 0.04vw), 0.80rem);
+  --step--1: clamp(0.82rem, calc(0.77rem + 0.26vw), 1.00rem);
   --step-0: clamp(0.88rem, calc(0.77rem + 0.54vw), 1.25rem);
-  --step-1: clamp(1.05rem, calc(0.90rem + 0.73vw), 1.56rem);
-  --step-2: clamp(1.26rem, calc(1.06rem + 0.99vw), 1.95rem);
-  --step-3: clamp(1.51rem, calc(1.25rem + 1.33vw), 2.44rem);
-  --step-4: clamp(1.81rem, calc(1.46rem + 1.77vw), 3.05rem);
-  --step-5: clamp(2.18rem, calc(1.71rem + 2.34vw), 3.82rem);
-  --step-6: clamp(2.61rem, calc(2.00rem + 3.08vw), 4.77rem);
-  --step-7: clamp(3.14rem, calc(2.33rem + 4.04vw), 5.96rem);
+  --step-1: clamp(0.93rem, calc(0.75rem + 0.90vw), 1.56rem);
+  --step-2: clamp(1.00rem, calc(0.72rem + 1.37vw), 1.95rem);
+  --step-3: clamp(1.06rem, calc(0.67rem + 1.97vw), 2.44rem);
+  --step-4: clamp(1.13rem, calc(0.59rem + 2.74vw), 3.05rem);
+  --step-5: clamp(1.21rem, calc(0.47rem + 3.72vw), 3.82rem);
+  --step-6: clamp(1.29rem, calc(0.30rem + 4.97vw), 4.77rem);
+  --step-7: clamp(1.38rem, calc(0.07rem + 6.55vw), 5.96rem);
+  --step-8: clamp(1.47rem, calc(-0.24rem + 8.54vw), 7.45rem);
+  --step-9: clamp(1.57rem, calc(-0.64rem + 11.06vw), 9.31rem);
+  --step-10: clamp(1.67rem, calc(-1.17rem + 14.24vw), 11.64rem);
+
+  /* size */
+  --space-3xl: clamp(48.13rem, calc(42.23rem + 29.46vw), 68.75rem);
 }
 
 html,
@@ -29,6 +36,7 @@ body {
   font-family: Montaga;
   color: black;
   background: var(--primary);
+  scroll-behavior: smooth;
 }
 
 a {

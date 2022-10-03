@@ -2,7 +2,7 @@ import styles from '../../styles/Nav.module.css';
 import NavList from './NavList';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
+import NavMobile from './mobileNav/NavMobile';
 export default function Nav() {
 
   const [border, setBorder] = useState(false);
@@ -21,13 +21,16 @@ export default function Nav() {
   });
 
   return (
-    <div
-      className={border ? `${styles.container} ${styles.scroll}` : styles.container}
-    >
-      <NavList
-        items={['Home', 'Venue', <Image src="/icon.png" alt="Logo" width={80} height={80} />, 'Registry', 'RSVP']}
+    <>
+      <nav
+        className={border ? `${styles.container} ${styles.scroll}` : styles.container}
+      >
+        <NavList
+          items={['Home', 'Venue', <Image src="/icon.png" alt="Logo" width={70} height={70} />, 'Registry', 'RSVP']}
 
-      />
-    </div>
+        />
+      </nav>
+      <NavMobile />
+    </>
   );
 }

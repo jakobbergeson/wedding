@@ -1,0 +1,76 @@
+.container {
+  position: relative;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: none;
+  padding: 1rem 1rem;
+  font-size: var(--step-9);
+}
+
+.navicon {
+  position: absolute;
+  top: 19px;
+  right: 1rem;
+  line-height: 1;
+  padding: 0.5rem;
+  z-index: 100;
+  outline: 0;
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+}
+
+.navicon i {
+  background: var(--accent);
+  background: linear-gradient(90deg,var(--accent),var(--accent) 50%,var(--primary) 0,var(--primary));
+  width: 22px;
+  height: 2px;
+  background-size: 200% 100%;
+  display: block;
+  border-radius: 2px;
+  transition: background-position .3s;
+}
+
+.navicon i+i {
+  margin-top: 6px;
+}
+
+.navicon:focus {
+  outline: 1px solid var(--accent);
+}
+
+.navicon i:nth-child(2) {
+  transform: scale(-1);
+}
+
+.menu {
+  position: fixed;
+  background: var(--accent);
+  color: var(--primary);
+  visibility: hidden;
+  transition: opacity .3s,visibility .3s;
+  text-align: center;
+  z-index: 50;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.open i {
+  background-position: -100% 0;
+}
+
+@media only screen and (max-width: 555px) {
+
+  .container {
+    display: block;
+  }
+}
