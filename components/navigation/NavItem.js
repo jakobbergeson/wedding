@@ -13,7 +13,8 @@ export default function NavItem({ children }) {
 
     >
       <Link
-        href="/"
+        href="/#venue"
+        scroll={false}
       >
         <a
           className={styles.link}

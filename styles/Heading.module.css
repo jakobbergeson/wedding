@@ -1,6 +1,16 @@
+.container {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+}
+
 .sentence {
   color: var(--accent);
   font-size: var(--step-0);
+  text-align: center;
 }
 
 .heading {
