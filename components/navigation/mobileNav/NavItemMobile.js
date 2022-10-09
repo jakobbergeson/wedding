@@ -12,9 +12,10 @@ export default function NavItemMobile({
       className={`${styles.container} ${styles.open}`}
       onClick={(e) => toggleOpen()}
     >
-      {i !== 0 && <div className={i === 2 && open ? `${styles.line} ${styles.odd} ${styles.open}` : i === 2 ? `${styles.line} ${styles.odd}` : open ? `${styles.line} ${styles.open}` : styles.line} />}
+      {i !== 0 && <div className={i % 2 === 0 && open ? `${styles.line} ${styles.odd} ${styles.open}` : i % 2 === 0 ? `${styles.line} ${styles.odd}` : open ? `${styles.line} ${styles.open}` : styles.line} />}
       <Link
-        href="/"
+        href="/#venue"
+        scroll={false}
       >
         <a
           className={styles.link}

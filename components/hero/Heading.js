@@ -1,9 +1,8 @@
-import Box from '../Box';
 import styles from '../../styles/Heading.module.css';
 
 export default function Heading() {
   return (
-    <Box>
+    <div className={styles.container}>
       <p
         className={styles.sentence}
       >
@@ -17,8 +16,8 @@ export default function Heading() {
       <p
         className={styles.sentence}
       >
-        January 11th, 2023 - San Diego, Ca
+        January 28th, 2023 - San Diego, Ca
       </p>
-    </Box>
+    </div>
   );
 }

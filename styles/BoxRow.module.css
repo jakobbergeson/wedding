@@ -1,0 +1,19 @@
+.container {
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
+  padding: 2rem 2rem;
+}
+
+@media only screen and (max-width: 555px) {
+  
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem;
+  }
+}
