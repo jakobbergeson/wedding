@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Nav from '../components/navigation/Nav';
 import Hero from '../components/hero/Hero';
 import Venue from '../components/venue/Venue';
+import Seperator from '../components/Seperator';
+import Itinerary from '../components/itinerary/Itinerary';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -18,6 +20,11 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Venue />
+        <Seperator />
+        <Seperator
+          customStyle={{ transform: 'translate(0px, -52%)', zIndex: 100 }}
+        />
+        <Itinerary />
       </main>
 
       <footer className={styles.footer}>

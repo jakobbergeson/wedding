@@ -5,7 +5,7 @@ import BoxRow from '../BoxRow';
 export default function Venue() {
   return (
     <BoxRow
-      id="venue"
+      id='venue'
     >
       <MessageBox />
       <Picture />
