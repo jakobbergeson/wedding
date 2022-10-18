@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  width: 75px;
+  fill: var(--link);
+  transition: fill .5s
+}
+
+.svg:hover {
+  fill: var(--secondary);
+  transition: fill .3s
+}
+
+.lineHidden {
+  height: 2px;
+  width: 0%;
+  background-color: var(--accent);
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.lineShow {
+  height:2px;
+  width: 100%;
+  background-color: var(--accent);
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+@media only screen and (max-width: 555px) {
+  
+  .container {
+   width: 100%;
+  }
+
+  .link {
+    margin-top: 1em;
+  }
+  
+}

@@ -5,6 +5,7 @@ import Hero from '../components/hero/Hero';
 import Venue from '../components/venue/Venue';
 import Seperator from '../components/Seperator';
 import Itinerary from '../components/itinerary/Itinerary';
+import Registry from '../components/registry/Registry';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -21,10 +22,12 @@ export default function Home() {
         <Hero />
         <Venue />
         <Seperator />
-        <Seperator
-          customStyle={{ transform: 'translate(0px, -52%)', zIndex: 100 }}
-        />
         <Itinerary />
+        <Seperator />
+        {/* <Seperator
+          customStyle={{ transform: 'translate(0px, -52%)', zIndex: 100 }}
+        /> */}
+        <Registry />
       </main>
 
       <footer className={styles.footer}>
