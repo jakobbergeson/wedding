@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+
+.ornament {
+  object-fit: contain;
+  transform: rotate(25deg);
+  opacity: 62%;
+}

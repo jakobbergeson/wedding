@@ -48,6 +48,57 @@ a {
   box-sizing: border-box;
 }
 
+.swiper {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 4rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+	position: absolute;
+	top: 0px;
+	display: flex;
+	justify-content: space-evenly;
+  width: 100%;
+	
+}
+.swiper-pagination-bullet {
+  padding: 5px 10px;
+	border-radius: 0;
+	width: auto;
+	text-align: center;
+	font-size: var(--step--1);
+  color: var(--secondary);
+  cursor: pointer;
+  transition: color .5s ease;
+}
+
+.swiper-pagination-bullet:hover {
+  color: var(--accent);
+  transition: color .3s ease;
+}
+
+.swiper-pagination-bullet-active {
+	color: var(--accent);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: black;
