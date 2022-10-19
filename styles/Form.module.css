@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+}
+
+.container input {
+  display: block;
+  box-sizing: border-box;
+  min-width: fit-content;
+  border-radius: 4px;
+  border: 1px solid var(--link);
+  padding: 10px 15px;
+  margin-bottom: 1.5rem;
+  font-size: var(--step--1);
+  font-family: inherit;
+}
+
+.container input:focus {
+  outline-color: var(--secondary);
+}
+
+.nameBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container p {
+  margin: 0px 0px 3px 0px;
+  font-size: var(--step--2);
+}
+
+.container p:before {
+  content: '*';
+  color: var(--accent);
+  margin-right: .3em;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 49%;
+  min-width: fit-content;
+  border-radius: 4px;
+  border: 1px solid var(--link);
+  padding: 10px 10px;
+  margin-bottom: 1.5rem;
+  font-size: var(--step--1);
+  background-color: white;
+  color: var(--link);
+  font-size: var(--step--1);
+}
+
+.container input[type="radio"] {
+  background-color: initial;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0px;
+  margin-right: 6px;
+  padding: 0px;
+  border: 1px;
+  transform: scale(1.2);
+}
+
+.container input[type="submit"] {
+  background-color: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all .5s;
+}
+
+.container input[type="submit"]:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+  border-color: transparent;
+  transition: all .3s;
+}
