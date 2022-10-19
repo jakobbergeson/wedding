@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:fit-content;
+  max-width: 40%;
+}
+
+.header {
+  font-size: var(--step-5);
+  text-align: left;
+  margin: 1rem 0rem;
+}
+
+.paragraph {
+  color: var(--link);
+  font-size: var(--step--1);
+  text-align: left;
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 555px) {
+  
+  .container {
+   max-width: 100%;
+  }
+  
+}
