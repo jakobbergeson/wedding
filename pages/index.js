@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Shannon & Anthony</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/icon.png" />
       </Head>
 
       <Nav />

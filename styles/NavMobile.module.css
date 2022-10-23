@@ -4,7 +4,7 @@
   z-index: 1000;
   width: 100%;
   display: none;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 0rem;
   font-size: var(--step-9);
 }
 
