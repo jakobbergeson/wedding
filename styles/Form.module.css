@@ -11,7 +11,7 @@
   min-width: fit-content;
   border-radius: 4px;
   border: 1px solid var(--link);
-  padding: 10px 15px;
+  padding: 10px 10px;
   margin-bottom: 1.5rem;
   font-size: var(--step--1);
   font-family: inherit;
@@ -44,7 +44,7 @@
   margin-right: .3em;
 }
 
-.radio {
+.radioWrapper {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -60,6 +60,14 @@
   font-size: var(--step--1);
 }
 
+.dropShow {
+  animation: drop .3s cubic-bezier(.17,.67,.16,1.02) 1;
+}
+
+.fade {
+  animation: fade 1.8s cubic-bezier(.17,.67,.16,1.02) 1;
+}
+
 .container input[type="radio"] {
   background-color: initial;
   cursor: pointer;
@@ -72,6 +80,7 @@
 }
 
 .container input[type="submit"] {
+  font-size: var(--step-2);
   background-color: transparent;
   color: var(--accent);
   cursor: pointer;
@@ -84,4 +93,29 @@
   color: var(--primary);
   border-color: transparent;
   transition: all .3s;
+}
+
+@keyframes drop {
+
+0% {
+  opacity: 0;
+  transform: translateY(-40%);
+}
+
+100% {
+  opacity: 1;
+  transform: translateY(0%);
+}
+  
+}
+
+@keyframes fade  {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

@@ -10,10 +10,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  outline: 1px solid var(--accent);
+  padding: 1rem;
+  animation: pulse 2s infinite ease;
+}
+
+.link:hover {
+  animation-play-state: paused;
+
 }
 
 .svg {
   width: 75px;
+  transform: scale(1);
   fill: var(--link);
   transition: fill .5s
 }
@@ -39,10 +48,28 @@
   transition: all .3s ease;
 }
 
+@keyframes pulse {
+	0% {
+    padding: 1.50rem;
+		transform: padding ease;
+	}
+
+	70% {
+    padding: .75rem;
+		transform: padding ease;
+	}
+
+	100% {
+    padding: 1.50rem;
+		transform: padding ease; 
+	}
+}
+
 @media only screen and (max-width: 555px) {
   
   .container {
    width: 100%;
+   height: 160px;
   }
 
   .link {

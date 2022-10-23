@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from '../../../styles/NavMobile.module.css';
 import Image from 'next/image';
-import Icon from '../../../public/favicon.png';
+import Icon from '../../../public/icon.png';
 import Link from 'next/link';
 import NavListMobile from './NavListMobile';
 
