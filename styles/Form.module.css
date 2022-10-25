@@ -38,8 +38,7 @@
   font-size: var(--step--2);
 }
 
-.container p:before {
-  content: '*';
+.container strong {
   color: var(--accent);
   margin-right: .3em;
 }
@@ -62,6 +61,10 @@
 
 .dropShow {
   animation: drop .3s cubic-bezier(.17,.67,.16,1.02) 1;
+}
+
+.riseHide {
+  animation: rise .3s cubic-bezier(.17,.67,.16,1.02) 1;
 }
 
 .fade {
@@ -95,17 +98,46 @@
   transition: all .3s;
 }
 
+.error {
+  background-color: rgb(235, 159, 159);
+}
+
+.errorMes {
+  font-size: var(--step-3);
+  color: rgb(235, 159, 159);
+}
+
+.thankYou {
+  font-size: var(--step-5);
+  margin: 1rem auto;
+  color: var(--accent)
+}
+
 @keyframes drop {
 
-0% {
-  opacity: 0;
-  transform: translateY(-40%);
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
 }
 
-100% {
-  opacity: 1;
-  transform: translateY(0%);
-}
+@keyframes rise {
+  
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
   
 }
 
@@ -118,4 +150,5 @@
   100% {
     opacity: 1;
   }
+  
 }

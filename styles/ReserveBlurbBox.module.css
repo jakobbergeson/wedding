@@ -9,7 +9,7 @@
 .header {
   font-size: var(--step-5);
   text-align: left;
-  margin: 1rem 0rem;
+  margin: 1rem auto;
 }
 
 .paragraph {
