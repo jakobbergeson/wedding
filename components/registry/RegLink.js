@@ -19,7 +19,7 @@ export default function RegLink() {
           className={styles.link}
           href="https://www.amazon.com/wedding/share/shannonandanthonyregistry"
           target='_blank'
-          rel='noopener'
+          rel='noreferrer'
           onMouseOver={() => setHover1(true)}
           onMouseLeave={() => setHover1(false)}
         >
@@ -38,7 +38,7 @@ export default function RegLink() {
           className={styles.linkChill}
           href='https://venmo.com/code?user_id=2324927654920192532&created=1667176994'
           target='_blank'
-          rel='noopener'
+          rel='noreferrer'
           onMouseOver={() => setHover2(true)}
           onMouseLeave={() => setHover2(false)}
         >

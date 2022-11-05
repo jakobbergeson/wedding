@@ -212,7 +212,7 @@ export default function Form() {
                     className={styles.fade}
                   >
                     <strong>*</strong>
-                    `Plus One's First Name`
+                    {`Plus One's First Name`}
                   </p>
                   {errors.firstNamePlusOne && <p className={`${styles.errorMes} ${styles.dropShow}`}>⚠ This field is required</p>}
                   <input
@@ -229,7 +229,7 @@ export default function Form() {
                     className={styles.fade}
                   >
                     <strong>*</strong>
-                    `Plus One's Last Name`
+                    {`Plus One's Last Name`}
                   </p>
                   {errors.lastNamePlusOne && <p className={`${styles.errorMes} ${styles.dropShow}`}>⚠ This field is required</p>}
                   <input
