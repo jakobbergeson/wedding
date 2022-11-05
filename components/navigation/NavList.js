@@ -2,7 +2,7 @@ import styles from '../../styles/NavList.module.css';
 import NavItem from './NavItem';
 
 export default function NavList({
-  items = ['Home', 'Venue', 'Registry', 'RSVP']
+  items
 }) {
   return (
     <div className={styles.container}>
@@ -10,8 +10,9 @@ export default function NavList({
 
         <NavItem
           key={i}
+          link={item.link}
         >
-          {item}
+          {item.name}
         </NavItem>
       )}
     </div>

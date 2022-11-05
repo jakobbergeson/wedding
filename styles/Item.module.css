@@ -3,32 +3,53 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
+  padding: 2rem 0rem;
+  border-radius: 8px;
+}
+
+.even {
+  background-color: rgba(172, 129, 1, 0.04);
 }
 
 .time {
   font-size: var(--step--1);
   color: var(--accent);
   text-align: left;
-  margin: 0px;
+  min-width: max-content;
+  margin: 0px 0px 0px 30%;
 }
 
 .itemBox {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
   max-width: 66%;
+  margin: 0px 30% 0px 10%;
 }
 
 .header {
   font-size: var(--step-1);
   text-align: left;
-  margin: 0rem 0rem 1rem 0rem;
+  margin: 0rem 0rem .1rem 0rem;
 }
 
 .paragraph {
   color: var(--link);
   font-size: var(--step--1);
-  text-align: left;
-  margin-top: 0px;
+  text-align: right;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+@media only screen and (max-width: 555px) {
+  
+  .time {
+    margin: 0px 0px 0px 20%;
+  }
+
+  .itemBox {
+    margin: 0px 20% 0px 10%;
+  }
+  
 }

@@ -26,7 +26,7 @@ export default function Nav() {
         className={border ? `${styles.container} ${styles.scroll}` : styles.container}
       >
         <NavList
-          items={['Home', 'Venue', <Image src="/icon.png" alt="Logo" width={70} height={70} />, 'Registry', 'RSVP']}
+          items={[{ name: 'Venue', link: '/#venue' }, { name: 'Itinerary', link: '/#itinerary' }, { name: <Image src="/icon.png" alt="Logo" width={50} height={50} />, link: '/#top' }, { name: 'Registry', link: '/#registry' }, { name: 'RSVP', link: '/#rsvp' }]}
 
         />
       </nav>

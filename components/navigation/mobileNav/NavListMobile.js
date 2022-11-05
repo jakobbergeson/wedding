@@ -2,7 +2,7 @@ import styles from '../../../styles/NavListMobile.module.css';
 import NavItemMobile from './NavItemMobile';
 
 export default function NavListMobile({
-  items = ['Home', 'Venue', 'Registry', 'RSVP'],
+  items,
   toggleOpen,
   open
 }) {
@@ -16,8 +16,9 @@ export default function NavListMobile({
           toggleOpen={toggleOpen}
           i={i}
           open={open}
+          link={item.link}
         >
-          {item}
+          {item.name}
         </NavItemMobile>
       )}
     </nav>

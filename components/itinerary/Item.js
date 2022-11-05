@@ -1,9 +1,14 @@
 import styles from '../../styles/Item.module.css';
 
-export default function Item({ time, header, paragraph }) {
+export default function Item({
+  time,
+  header,
+  paragraph,
+  index
+}) {
   return (
     <div
-      className={styles.container}
+      className={index % 2 === 0 ? `${styles.container} ${styles.even}` : styles.container}
     >
       <p
         className={styles.time}

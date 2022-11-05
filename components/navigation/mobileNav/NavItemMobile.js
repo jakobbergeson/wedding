@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 export default function NavItemMobile({
   children,
+  link,
   toggleOpen,
   i,
   open
@@ -14,7 +15,7 @@ export default function NavItemMobile({
     >
       {i !== 0 && <div className={i % 2 === 0 && open ? `${styles.line} ${styles.odd} ${styles.open}` : i % 2 === 0 ? `${styles.line} ${styles.odd}` : open ? `${styles.line} ${styles.open}` : styles.line} />}
       <Link
-        href="/#venue"
+        href={link}
         scroll={false}
       >
         <a

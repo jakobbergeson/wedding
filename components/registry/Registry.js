@@ -2,16 +2,26 @@ import BoxRow from '../BoxRow';
 import BlurbBox from './BlurbBox';
 import RegLink from './RegLink';
 
-export default function Registry() {
+export default function Registry({
+  children
+}) {
   return (
-    <BoxRow
+    <div
       id='registry'
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      }}
     >
-      <BlurbBox
-        header={'Registry'}
-        paragraph={'Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi. Ut in eget leo dui nunc. Tortor viverra magna dignissim sit. Libero eu euismod risus, mauris etiam ut morbi amet in. Tortor duis dignissim adipiscing sem.'}
-      />
-      <RegLink />
-    </BoxRow>
+      {children}
+      <BoxRow>
+        <BlurbBox
+          header={'Registry'}
+          paragraph={'Your company is all we desire on our special day. However, if you insist on bestowing us with a gift, feel free to visit our Amazon registry or donate to our Venmo. Thanks in advance :3!'}
+        />
+        <RegLink />
+      </BoxRow>
+    </div>
   );
 }
