@@ -9,6 +9,7 @@ export default function Picture() {
     >
       <Image
         src={Hero}
+        alt='Shannon and Anthony wedding invite'
         layout="fill"
         className={styles.picture}
         priority={true}

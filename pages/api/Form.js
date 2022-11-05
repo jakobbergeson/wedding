@@ -7,7 +7,7 @@ export default async (req, res) => {
 
   if (!body.firstName || !body.lastName || !body.email || !body.attendance) {
     // Sends a HTTP bad request error code
-    return res.status(400).json({ data: 'A required fileds data is not found' });
+    return res.status(400).json({ data: 'A required fields data is not found' });
   }
 
   const message = `
