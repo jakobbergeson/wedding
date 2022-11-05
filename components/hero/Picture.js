@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from '../../styles/Picture.module.css';
+import Hero from '../../public/wedding-photo-clear.png';
 
 export default function Picture() {
   return (
@@ -7,7 +8,7 @@ export default function Picture() {
       className={styles.container}
     >
       <Image
-        src='/hero.jpg'
+        src={Hero}
         layout="fill"
         className={styles.picture}
         priority={true}

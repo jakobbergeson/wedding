@@ -2,7 +2,10 @@ import styles from '../../styles/NavItem.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function NavItem({ children }) {
+export default function NavItem({
+  children,
+  link
+}) {
 
   const [hover, setHover] = useState(false);
 
@@ -13,7 +16,7 @@ export default function NavItem({ children }) {
 
     >
       <Link
-        href="/#venue"
+        href={link}
         scroll={false}
       >
         <a

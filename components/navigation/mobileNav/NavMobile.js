@@ -39,7 +39,7 @@ export default function NavMobile() {
         className={open ? `${styles.menu} ${styles.open}` : styles.menu}
       >
         <NavListMobile
-          items={['Home', 'Venue', 'Registry', 'RSVP']}
+          items={[{ name: 'Venue', link: '/#venue' }, { name: 'Itinerary', link: '/#itinerary' }, { name: 'Registry', link: '/#registry' }, { name: 'RSVP', link: '/#rsvp' }]}
           toggleOpen={toggleOpen}
           open={open}
         />

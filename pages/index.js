@@ -1,5 +1,5 @@
+import { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Nav from '../components/navigation/Nav';
 import Hero from '../components/hero/Hero';
 import Venue from '../components/venue/Venue';
@@ -10,8 +10,12 @@ import Rsvp from '../components/rsvp/Rsvp';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+
+  const [hover, setHover] = useState(false);
+
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}>
       <Head>
         <title>Shannon & Anthony</title>
         <meta name="description" content="" />
@@ -19,31 +23,43 @@ export default function Home() {
       </Head>
 
       <Nav />
-      <main className={styles.main}>
+      <main
+        className={styles.main}
+      >
         <Hero />
         <Venue />
-        <Seperator />
-        <Itinerary />
-        <Seperator />
-        {/* <Seperator
-          customStyle={{ transform: 'translate(0px, -52%)', zIndex: 100 }}
-        /> */}
-        <Registry />
-        <Seperator />
-        <Rsvp />
+
+        <Itinerary>
+          <Seperator />
+        </Itinerary>
+        <Registry>
+          <Seperator />
+        </Registry>
+        <Rsvp>
+          <Seperator />
+        </Rsvp>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          className={styles.footBox}
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+          <a
+            href="https://www.jakobbergeson.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseOver={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            Built with ❤️ by
+            <span
+              className={styles.name}
+            >
+              Jakob Bergeson
+            </span>
+          </a>
+          <div className={hover ? styles.lineShow : styles.lineHidden} />
+        </div>
       </footer>
     </div>
   );

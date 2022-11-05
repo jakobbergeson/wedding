@@ -4,7 +4,9 @@ import Picture from './Picture';
 
 export default function Hero() {
   return (
-    <BoxCol>
+    <BoxCol
+      id='#top'
+    >
       <Heading />
       <Picture />
     </BoxCol>
