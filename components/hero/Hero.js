@@ -5,7 +5,7 @@ import Picture from './Picture';
 export default function Hero() {
   return (
     <BoxCol
-      id='#top'
+      id='top'
     >
       <Heading />
       <Picture />

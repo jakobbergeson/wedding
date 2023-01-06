@@ -6,7 +6,7 @@ import Venue from '../components/venue/Venue';
 import Seperator from '../components/Seperator';
 import Itinerary from '../components/itinerary/Itinerary';
 import Registry from '../components/registry/Registry';
-import Rsvp from '../components/rsvp/Rsvp';
+// import Rsvp from '../components/rsvp/Rsvp';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -35,9 +35,9 @@ export default function Home() {
         <Registry>
           <Seperator />
         </Registry>
-        <Rsvp>
+        {/* <Rsvp>
           <Seperator />
-        </Rsvp>
+        </Rsvp> */}
       </main>
 
       <footer className={styles.footer}>

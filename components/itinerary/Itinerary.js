@@ -12,7 +12,7 @@ export default function Itinerary({
   children
 }) {
 
-  var menu = ['Itinerary', 'Menu', 'Bar Rules'];
+  var menu = ['Itinerary', 'Menu', 'Rules'];
 
   var events = [
     { time: '12:30 p.m', header: 'Doors Open', paragraph: '' },
@@ -21,6 +21,16 @@ export default function Itinerary({
     { time: '3:00 p.m', header: 'Lunch', paragraph: 'Reception' },
     { time: '3:30 p.m', header: 'Toasts', paragraph: 'Reception' },
     { time: '4:00 p.m', header: 'Dancing', paragraph: 'Reception' }
+  ];
+
+  var food = [
+    { time: 'Lunch', header: 'All you can eat tacos', paragraph: '' },
+    { time: 'Dessert', header: 'Cupcakes :3', paragraph: '' }
+  ];
+
+  var rules = [
+    { time: 'Bar', header: '1:30-2:30', paragraph: 'Limited Happy Hour' },
+    { time: 'Dress Code', header: 'Semi-Formal', paragraph: 'Or whatever you want' }
   ];
 
   const pagination = {
@@ -64,58 +74,64 @@ export default function Itinerary({
             )}
         </SwiperSlide>
         <SwiperSlide>
+          {
+            food.map((e, i) =>
+              <Item
+                key={i}
+                time={e.time}
+                header={e.header}
+                paragraph={e.paragraph}
+                index={i}
+              />
+            )}
           <div
             style={{
               height: '100%',
               margin: 'auto',
-              backgroundColor: 'rgba(172, 129, 1, 0.04)',
+              backgroundColor: 'transparent',
               borderRadius: '8px'
 
             }}
           >
-            <p
-              style={{
-                fontSize: 'var(--step-4)',
-                marginBottom: '0px',
-                color: 'var(--link)'
-              }}
-            >
-              To Be Determined
-            </p>
             <Image
               src={Icon}
               alt='Icon'
-              width={450}
-              height={450}
+              width={400}
+              height={400}
             />
+
 
           </div>
         </SwiperSlide>
-        <SwiperSlide><div
-          style={{
-            height: '100%',
-            margin: 'auto',
-            backgroundColor: 'rgba(172, 129, 1, 0.04)',
-            borderRadius: '8px'
-          }}
-        >
-          <p
+        <SwiperSlide>
+          {
+            rules.map((e, i) =>
+              <Item
+                key={i}
+                time={e.time}
+                header={e.header}
+                paragraph={e.paragraph}
+                index={i}
+              />
+            )}
+          <div
             style={{
-              fontSize: 'var(--step-4)',
-              marginBottom: '0px',
-              color: 'var(--link)'
+              height: '100%',
+              margin: 'auto',
+              backgroundColor: 'transparent',
+              borderRadius: '8px'
+
             }}
           >
-            To Be Determined
-          </p>
-          <Image
-            src={Icon}
-            alt='Icon'
-            width={450}
-            height={450}
-          />
+            <Image
+              src={Icon}
+              alt='Icon'
+              width={400}
+              height={400}
+            />
 
-        </div>
+
+          </div>
         </SwiperSlide>
       </Swiper>
     </BoxCol>
