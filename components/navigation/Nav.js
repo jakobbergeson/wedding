@@ -1,5 +1,6 @@
 import styles from '../../styles/Nav.module.css';
 import NavList from './NavList';
+import NavItem from './NavItem';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import NavMobile from './mobileNav/NavMobile';
@@ -25,8 +26,21 @@ export default function Nav() {
       <nav
         className={border ? `${styles.container} ${styles.scroll}` : styles.container}
       >
+        <div
+          style={{
+            position: 'absolute',
+            left: '1px',
+          }}
+        >
+
+          <NavItem
+            link={'/#top'}
+          >
+            <Image src="/icon.png" alt="Logo" width={50} height={50} />
+          </NavItem>
+        </div>
         <NavList
-          items={[{ name: 'Venue', link: '/#venue' }, { name: 'Itinerary', link: '/#itinerary' }, { name: <Image src="/icon.png" alt="Logo" width={50} height={50} />, link: '/#top' }, { name: 'Registry', link: '/#registry' }, { name: 'RSVP', link: '/#rsvp' }]}
+          items={[{ name: 'Venue', link: '/#venue' }, { name: 'Itinerary', link: '/#itinerary' }, { name: 'Registry', link: '/#registry' }]}
 
         />
       </nav>
